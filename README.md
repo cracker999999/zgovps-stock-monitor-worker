@@ -28,17 +28,27 @@
     npm install
     ```
 
-2.  登录 Cloudflare:
+2.  初始化:
+    ```bash
+    npm init -y
+    ```
+
+3.  本地安装 Wrangler:
+    ```bash
+    npm install -D wrangler
+    ```
+
+4.  登录 Cloudflare:
     ```bash
     npx wrangler login
     ```
 
-3.  部署 Worker:
+5.  部署 Worker:
     ```bash
     npx wrangler deploy
     ```
 
-4.  设置环境变量 (替换为你自己的 Token 和 ID):
+6.  设置环境变量 (替换为你自己的 Token 和 ID):
     ```bash
     npx wrangler secret put TELEGRAM_BOT_TOKEN
     # 输入你的 Bot Token
