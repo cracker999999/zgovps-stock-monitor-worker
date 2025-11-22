@@ -56,6 +56,11 @@
     # 输入你的 Chat ID
     ```
 
+7.  查看log:
+    ```bash
+    npx wrangler tail
+    ```
+
 ### 方法二：直接在 Cloudflare Dashboard 创建
 
 1.  登录 Cloudflare Dashboard，进入 **Workers & Pages**。
