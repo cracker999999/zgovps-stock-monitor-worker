@@ -1,0 +1,19 @@
+name = "zgovps-stock-monitor"
+main = "worker.js"
+compatibility_date = "2023-10-02"
+
+# 触发器配置：每分钟运行一次
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+# 请在 Cloudflare Dashboard 中设置这些变量，或者在部署时通过 --var 传递
+# TELEGRAM_BOT_TOKEN = ""
+# TELEGRAM_CHAT_ID = ""
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
